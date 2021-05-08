@@ -11,7 +11,6 @@ public class ThirdMaximumNumber {
 
 	private static int thirdMax(int[] nums) {
 		int max = 0, n = nums.length - 1, distPosition = -1;
-
 		Arrays.sort(nums);
 
 		if (nums.length == 1 || nums.length == 2)
@@ -22,7 +21,6 @@ public class ThirdMaximumNumber {
 				max += 1;
 			if (max == 2)
 				distPosition = i;
-
 		}
 		return distPosition != -1 ? nums[distPosition - 1] : nums[n];
 	}
